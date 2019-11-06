@@ -21,4 +21,16 @@ String URLCurrentVancouver=baseURL_Current + vancouverId + and +apiKey+ and+ mod
 String URLForecastVancouver=baseURL + vancouverId + and +apiKey+ and+ mode +and+ unitMetric;
 
 
-println(URLCurrentEdmonton);
+//println(URLCurrentEdmonton);
+println(URLForecastEdmonton);
+//println(URLCurrentCalgary);
+//println(URLForecastCalgary);
+//println(URLCurrentVancouver);
+//println(URLForecastVancouver);
+
+JSONObject jsonCurrentEdmonton = loadJSONObject(URLCurrentEdmonton);
+JSONObject jsonForecastEdmonton = loadJSONObject(URLForecastEdmonton);
+JSONObject jsonCurrentCalgary = loadJSONObject(URLCurrentCalgary);
+JSONObject jsonForecastCalgary = loadJSONObject(URLForecastCalgary);
+JSONObject jsonCurrentVancouver = loadJSONObject(URLCurrentVancouver);
+JSONObject jsonForecastVancouver = loadJSONObject(URLForecastVancouver);
