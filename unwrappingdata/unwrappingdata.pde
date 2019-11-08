@@ -16,6 +16,17 @@ float temp= main.getFloat("temp");
 float tempmin= main.getFloat("temp_min");
 float tempmax= main.getFloat("temp_max");
 
+JSONObject ali= jsonCurrentEdmonton.getJSONObject("sys");
+String country= ali.getString("country");
+float sunrise= ali.getFloat("sunrise");
+float sunset= ali.getFloat("sunset");
+
+JSONObject ala= jsonCurrentEdmonton.getJSONObject("sys");
+String name= ala.getString("name");
+println(name);
+println(country);
+println(sunrise);
+println(sunset);
 
 println(description);
 println(mainweather);
