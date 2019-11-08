@@ -41,15 +41,16 @@ URLForecastEdmonton=baseURL + edmontonId + and +apiKey+ and+ mode +and+ unitMetr
  URLCurrentCalgary=baseURL_Current + calgaryId + and +apiKey+ and+ mode +and+ unitMetric;
  URLForecastCalgary=baseURL + calgaryId + and +apiKey+ and+ mode +and+ unitMetric;
 URLCurrentVancouver=baseURL_Current + vancouverId + and +apiKey+ and+ mode +and+ unitMetric;
- URLForecastVancouver=baseURL + vancouverId + and +apiKey+ and+ mode +and+ unitMetric;}
+ URLForecastVancouver=baseURL + vancouverId + and +apiKey+ and+ mode +and+ unitMetric;
 
 
-//println(URLCurrentEdmonton);
+println(URLCurrentEdmonton);
 //println(URLForecastEdmonton);
 //println(URLCurrentCalgary);
 //println(URLForecastCalgary);
 //println(URLCurrentVancouver);
 //println(URLForecastVancouver);
+}
 void APICall(){
  jsonCurrentEdmonton = loadJSONObject(URLCurrentEdmonton);
  jsonForecastEdmonton = loadJSONObject(URLForecastEdmonton);
