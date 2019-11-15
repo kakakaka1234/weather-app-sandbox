@@ -92,4 +92,5 @@ void currentRedDeer() {
   sunriseRedDeer = sysRedDeer.getInt("sunrise");
   sunsetRedDeer = sysRedDeer.getInt("sunset");
 
-  nameRedDeer = jsonCurrentVancouver.getString("name");}
+  nameRedDeer = jsonCurrentVancouver.getString("name");
+}
