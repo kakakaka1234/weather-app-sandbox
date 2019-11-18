@@ -3,7 +3,9 @@
 void setup(){
 buildingURL();
 APICall();
-unwrapToVariables();}
+unwrapToVariables();
+size(500,600);
+GUI_setup();}
 
 
 void draw(){// city call, see procedure using boolean & button
