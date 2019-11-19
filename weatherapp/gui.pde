@@ -27,9 +27,9 @@ currentapiwidth= width;
 currentapiheight= height*1/30;
 rect(currentapix,currentapiy,currentapiwidth,currentapiheight);
 
-tempx=width*0;
+tempx=width*1/5;
 tempy=height*4/30;
-tempwidth=width;
+tempwidth=width*3/5;
 tempheight= height*16/30;
 rect(tempx,tempy,tempwidth,tempheight);
 
