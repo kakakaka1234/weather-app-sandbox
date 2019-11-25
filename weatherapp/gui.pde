@@ -12,7 +12,7 @@ float wtx,wty,wtwidth,wtheight;
 float desx,desy,deswidth,desheight;
 
 
-void GUI_setup(){
+void GUI_Setup(){
 background(black);
 titleX=titleY=width*0 ; 
 titleRectWidth= width*9/10 ;
