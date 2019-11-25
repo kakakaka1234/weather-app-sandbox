@@ -1,6 +1,6 @@
 // Open Weather Map App
 // Global Variables
-String edmTemp, calgTemp, rdTemp;
+String edmTemp, calgTemp, rdTemp, rdTempmin;
 
 void setup() {
   quitButtonSetup();
@@ -25,7 +25,9 @@ void setup() {
   textDraw(nameEdm, titleFont, height, #2C08FF, LEFT, CENTER, ex,ey, ewidth,eheight); //Edmonton
   println(nameEdm);
   textDraw(nameCalg, titleFont, height, #2C08FF, LEFT, CENTER, cx,cy, cwidth,cheight); //Calgary
-  textDraw(nameRD, titleFont, height, #2C08FF, LEFT, CENTER, vx,vy, vwidth,vheight); //Red Deer
+  textDraw(nameRD, titleFont, height, #2C08FF, LEFT, CENTER, vx,vy, vwidth,vheight);
+  
+  //Red Deer
 }
 
 void draw() {
@@ -60,6 +62,13 @@ void mousePressed() {
     rect(tempx, tempy, tempwidth, tempheight);
     textDraw(rdTemp, titleFont, height, #2C08FF, CENTER, CENTER, tempx, tempy, tempwidth, tempheight); //Calgary
     println(tempRedDeer, rdTemp);
+  }
+  
+    if (mouseX>tminx && mouseX<tminx+tminwidth && mouseY>tminy && mouseY<tminy+tminheight) {
+    rdTempmin = String.valueOf(tempMinRedDeer);
+    rect(tempx, tempy, tempwidth, tempheight);
+    textDraw(tempMinRedDeer, titleFont, height, #2C08FF, CENTER, CENTER, tminx, tminy, tminwidth, tminheight); //Calgary
+    println(tempMinRedDeer, rdTempmin);
   }
   if(mousePressed){quitButtonDraw();}
   
