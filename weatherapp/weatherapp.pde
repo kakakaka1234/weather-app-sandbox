@@ -132,19 +132,19 @@ void mousePressed() {
     desrd = String.valueOf(descriptionRedDeer);
     rect(desx, desy, deswidth, desheight);
     textDraw(desrd, titleFont, height, #2C08FF, CENTER, CENTER, desx, desy, deswidth, desheight); //Calgary
-    println(mainWeatherRedDeer, desrd);
+    println(descriptionRedDeer, desrd);
   }
   if (mouseX>ex && mouseX<ex+ewidth && mouseY>ey && mouseY<ey+eheight) {
     desed = String.valueOf(descriptionEdmonton);
     rect(desx, desy, deswidth, desheight);
     textDraw(desed, titleFont, height, #2C08FF, CENTER, CENTER, desx, desy, deswidth, desheight); //Calgary
-    println(mainWeatherEdmonton, desed);
+    println(descriptionEdmonton, desed);
   }
   if (mouseX>cx && mouseX<cx+cwidth && mouseY>cy && mouseY<cy+cheight) {
     desc = String.valueOf(descriptionCalgary);
     rect(desx, desy, deswidth, desheight);
     textDraw(desc, titleFont, height, #2C08FF, CENTER, CENTER, desx, desy, deswidth, desheight); //Calgary
-    println(mainWeatherCalgary, desc);
+    println(descriptionCalgary, desc);
   }
 
 
