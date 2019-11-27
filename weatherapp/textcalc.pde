@@ -28,7 +28,7 @@ void textDraw(String string, PFont font, float height, color ink, int alignHoriz
   fill(ink); //Purple Ink, copied from Color Selector
   textAlign (alignHorizontal, alignVertical); //Align X&Y, see Processing.org / Reference
   //Values: LEFT | CENTER | RIGHT & TOP | CENTER | BOTTOM | BASELINE
-  //Parameters change depending on font and serifs
+  //Parameters change dep8ending on font and serifs
   if (string.length() >= 3) {
     fontSize = textCalculator(height, string, rectWidth);
   } 
