@@ -109,18 +109,17 @@ void mousePressed() {
   if (mouseX>vx && mouseX<vx+vwidth && mouseY>vy && mouseY<vy+vheight) {
     rdwt = mainWeatherRedDeer;
     rect(wtx, wty, wtwidth, wtheight);
-    println("1", rdwt);
     textDraw(rdwt, titleFont, height, #2C08FF, CENTER, CENTER, wtx, wty, wtwidth, wtheight); //Calgary
     println(mainWeatherRedDeer, rdwt);
   }
   if (mouseX>ex && mouseX<ex+ewidth && mouseY>ey && mouseY<ey+eheight) {
-    edwt = String.valueOf(mainWeatherEdmonton);
+    edwt = mainWeatherEdmonton;
     rect(wtx, wty, wtwidth, wtheight);
     textDraw(edwt, titleFont, height, #2C08FF, CENTER, CENTER, wtx, wty, wtwidth, wtheight); //Calgary
     println(mainWeatherEdmonton, edwt);
   }
   if (mouseX>cx && mouseX<cx+cwidth && mouseY>cy && mouseY<cy+cheight) {
-    cwt = String.valueOf(mainWeatherCalgary);
+    cwt = mainWeatherCalgary;
     rect(wtx, wty, wtwidth, wtheight);
     textDraw(cwt, titleFont, height, #2C08FF, CENTER, CENTER, wtx, wty, wtwidth, wtheight); //Calgary
     println(mainWeatherCalgary, cwt);
@@ -129,19 +128,19 @@ void mousePressed() {
   //
 
   if (mouseX>vx && mouseX<vx+vwidth && mouseY>vy && mouseY<vy+vheight) {
-    desrd = String.valueOf(descriptionRedDeer);
+    desrd = descriptionRedDeer;
     rect(desx, desy, deswidth, desheight);
     textDraw(desrd, titleFont, height, #2C08FF, CENTER, CENTER, desx, desy, deswidth, desheight); //Calgary
     println(descriptionRedDeer, desrd);
   }
   if (mouseX>ex && mouseX<ex+ewidth && mouseY>ey && mouseY<ey+eheight) {
-    desed = String.valueOf(descriptionEdmonton);
+    desed = descriptionEdmonton;
     rect(desx, desy, deswidth, desheight);
     textDraw(desed, titleFont, height, #2C08FF, CENTER, CENTER, desx, desy, deswidth, desheight); //Calgary
     println(descriptionEdmonton, desed);
   }
   if (mouseX>cx && mouseX<cx+cwidth && mouseY>cy && mouseY<cy+cheight) {
-    desc = String.valueOf(descriptionCalgary);
+    desc = descriptionCalgary;
     rect(desx, desy, deswidth, desheight);
     textDraw(desc, titleFont, height, #2C08FF, CENTER, CENTER, desx, desy, deswidth, desheight); //Calgary
     println(descriptionCalgary, desc);
