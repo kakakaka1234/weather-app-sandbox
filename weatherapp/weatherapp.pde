@@ -64,12 +64,7 @@ void mousePressed() {
     println(tempRedDeer, rdTemp);
   }
   
-    if (mouseX>tminx && mouseX<tminx+tminwidth && mouseY>tminy && mouseY<tminy+tminheight) {
-    rdTempmin = String.valueOf(tempMinRedDeer);
-    rect(tempx, tempy, tempwidth, tempheight);
-    textDraw(tempMinRedDeer, titleFont, height, #2C08FF, CENTER, CENTER, tminx, tminy, tminwidth, tminheight); //Calgary
-    println(tempMinRedDeer, rdTempmin);
-  }
+
   if(mousePressed){quitButtonDraw();}
   
   //
