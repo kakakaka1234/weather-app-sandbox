@@ -7,7 +7,7 @@ void setup() {
   buildingURL();
   APICall();
   unwrapToVariables();
-  size(500, 600); //Add Screen Size Checker
+  size(550, 600); //Add Screen Size Checker
   // Add fullScreen() option, with Display Size Checker
   GUI_Setup();
 
@@ -20,12 +20,12 @@ void setup() {
   SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy"); 
   formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");  
   String strDate = formatter.format(apiCurrentDateCall);
-  textDraw(strDate, titleFont, height, #2C08FF, LEFT, CENTER, currentapix, currentapiy, currentapiwidth, currentapiheight); //Time Stamp
+  textDraw(strDate, titleFont, height, #2C08FF, CENTER, CENTER, currentapix, currentapiy, currentapiwidth, currentapiheight); //Time Stamp
   println("in");
-  textDraw(nameEdm, titleFont, height, #2C08FF, LEFT, CENTER, ex, ey, ewidth, eheight); //Edmonton
+  textDraw(nameEdm, titleFont, height, #2C08FF, CENTER, CENTER, ex, ey, ewidth, eheight); //Edmonton
   println(nameEdm);
-  textDraw(nameCalg, titleFont, height, #2C08FF, LEFT, CENTER, cx, cy, cwidth, cheight); //Calgary
-  textDraw(nameRD, titleFont, height, #2C08FF, LEFT, CENTER, vx, vy, vwidth, vheight);
+  textDraw(nameCalg, titleFont, height, #2C08FF, CENTER, CENTER, cx, cy, cwidth, cheight); //Calgary
+  textDraw(nameRD, titleFont, height, #2C08FF, CENTER, CENTER, vx, vy, vwidth, vheight);
 
   //Red Deer
 }

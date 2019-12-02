@@ -2,7 +2,7 @@ color darkblue = #7EC0F5;
 color lightgreen = #08FC09;
 color regularButton = darkblue;
 color hoverOverButton = lightgreen;
-String qu= "Quit";
+String qu= "X";
 void quitButtonSetup() {
   titleFont = createFont ("Century", 40); //Must also Tools / Create Font / Find Font / Do Not Press "OK"
 }  
